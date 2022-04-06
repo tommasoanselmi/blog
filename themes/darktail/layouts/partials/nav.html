@@ -1,0 +1,9 @@
+<div>
+  <a class="mx-4 tracking-widest hover:decoration-2 hover:text-sky-500 text-slate-100 text-sm hover:underline hover:underline-offset-2 transition-all ease-in-out duration-500" href="{{ "/" | relURL }}">Home</a>
+  {{ range .Site.Menus.main }}
+  <a class="mx-4 tracking-widest hover:decoration-2 hover:text-sky-500 text-slate-100 text-sm hover:underline hover:underline-offset-2 transition-all ease-in-out duration-500" href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
+  {{ with .Site.GetPage "/blog" }}
+  <a class="mx-4 tracking-widest hover:decoration-2 hover:text-sky-500 text-slate-100 text-sm hover:underline hover:underline-offset-2 transition-all ease-in-out duration-500" href="{{ "/blog" | relURL }}">Blog</a>
+  {{ end }}
+</div>

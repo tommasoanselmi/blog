@@ -1,3 +1,28 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://tommasoanselmi.xyz'
+
+theme = "darktail"
+
+title = "Tommaso Anselmi"
+author = "Tommaso Anselmi"
+copyright = "Copyright © 2022, Tommaso Anselmi."
+languageCode = 'it'
+
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"
+
+  [params]
+  # For html descriptionl
+  description = "Sito web di Tommaso Anselmi"
+
+  favicon = "images/favicon.png"
+
+  # For OpenGraph template
+  images = ["images/share.png"]
+
+  # For OpenGraph template
+  title = "Sito web di Tommaso Anselmi"

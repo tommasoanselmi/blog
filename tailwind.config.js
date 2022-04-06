@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./themes/darktail/**/*/.{html,js}"],
+  content: ["./themes/darktail/layouts/**/*.html"],
   theme: {
     extend: {},
   },
