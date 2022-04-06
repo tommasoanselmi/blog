@@ -1,0 +1,13 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Blog di Tommaso Anselmi",
+  "author": "Tommaso Anselmi",
+  "license": "MIT",
+  "scripts": {
+    "server": "hugo server -D --disableFastRender"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
